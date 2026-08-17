@@ -1,0 +1,10 @@
+# Keep line endings the same no matter who clones this or what they are on.
+# Everything in here is text and it all gets stored as LF in the repo, which is
+# what it already is, so this just stops it drifting later.
+* text=auto eol=lf
+
+# GitHub works out the language from the file extension, and .v is ambiguous
+# because Coq uses it too. Without these the language bar on the repo page can
+# decide this is a Coq project, which it very much is not.
+*.v  linguist-language=Verilog
+*.sv linguist-language=SystemVerilog

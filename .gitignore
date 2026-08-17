@@ -1,0 +1,26 @@
+# The Vivado project itself is not tracked. Everything in here is generated
+# from the sources by build.tcl, and it comes to a few hundred MB, so there is
+# no point pushing it. Run build.tcl after cloning.
+build/
+
+# Vivado and xsim leftovers
+*.jou
+*.log
+*.str
+*.wdb
+*.pb
+*.backup.jou
+*.backup.log
+.Xil/
+xsim.dir/
+webtalk*.jou
+webtalk*.log
+usage_statistics_webtalk.*
+
+# Editor and tooling config, nothing here belongs to the design
+.claude/
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini
